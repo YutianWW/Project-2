@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/chat.css" />
+  <title>WonderLand</title>
+</head>
+
+<body>
+  <section class="chat-container">
+    <header class="chat-header">
+      <h1><i class="fi  fi-rr-balloons"></i> WonderLand</h1>
+      <h2 id="room-name"></h2>
+      <a id="leave-btn" class="btn">Leave Room</a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3> <i class="fi fi-rr-child-head"></i> Users</h3>
+        <ul  id="users"></ul>
+      </div>
+      <div class="chat-messages"></div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+        <button class="btn"><i class="fas"></i> Send</button>
+      </form>
+    </div>
+  </section>
+  <section class="background">
+    <div class="sun">
+      <div class="water">
+        <div class="reflection"></div>
+      </div>
+    </div>
+    <div class="plop"></div>
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
